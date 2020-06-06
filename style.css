@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: rgb(20, 21, 38);
+}
+.content {
+  padding: 35px;
+  text-align: center;
+  width: 340px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+    -3px -3px 7px rgba(255, 255, 255, 0.09);
+  background: rgb(20, 21, 38);
+}
+.content .text {
+  font-size: 20px;
+  font-weight: 650;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 200);
+}
+form .field {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+.field input:nth-child(2) {
+  margin-top: 20px;
+}
+.field input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.09);
+  background: rgb(20, 21, 38);
+  border-radius: 20px;
+  padding-left: 45px;
+  color: rgb(255, 255, 200);
+  transition: 0.6;
+}
+.field input::placeholder {
+  color: #b3b3b3;
+}
+.field input[type="text"]:focus {
+  box-shadow: 0 0 9px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+.field .icon {
+  position: absolute;
+  height: 70px;
+  left: 20px;
+  top: 10px;
+  line-height: 70px;
+  color: rgb(255, 255, 200);
+}
+form .tombol {
+  margin-top: 40px;
+
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+    -3px -3px 7px rgba(255, 255, 255, 0.09);
+  border: none;
+  background: rgb(20, 21, 38);
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+form .tombol:hover {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.09);
+  background: aqua;
+}
